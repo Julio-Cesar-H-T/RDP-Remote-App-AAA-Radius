@@ -32,7 +32,7 @@ El direccionamiento deriva de la matrícula **2025-0702** (ambos segmentos usan 
 | R-CORE      | gig0/1   | 10.7.2.1/24        | Gateway de servidores, origen RADIUS |
 | R-CORE      | gig0/0   | 10.7.1.1/24        | Gateway de clientes, relay DHCP      |
 | DC          | Ethernet | 10.7.2.2/24        | AD DS, DNS, DHCP, NPS, RDS, IIS      |
-| Windows 11  | Ethernet | 10.7.2.2/24 (DHCP) | Cliente de pruebas                   |
+| Windows 11  | Ethernet | 10.7.2.3/24 (DHCP) | Cliente de pruebas                   |
 
 
 ---
