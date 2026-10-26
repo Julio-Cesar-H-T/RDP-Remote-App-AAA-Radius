@@ -71,8 +71,6 @@ Un detalle revelador: la RemoteApp abierta por el cliente de Escritorio Remoto (
 
 La solución fue generar por PowerShell un certificado nuevo con los Key Usages correctos (**DigitalSignature** y **KeyEncipherment**), asignarlo a los tres roles del despliegue RDS y al binding 443 de IIS, e importarlo como certificado de confianza en el cliente para que el candado saliera limpio.
 
-![Topología](IMG/cert.png)
-
 
 ------
 
@@ -114,8 +112,6 @@ Un usuario local `Admin-local` (privilegio 15) y un `enable secret` protegen el 
 ### AAA y RADIUS
 
 Se activa AAA (`aaa new-model`), el servidor RADIUS apunta a `10.7.2.2` (puertos 1812/1813, mismo secreto), y se agrupa en `GRP-RADIUS` con `ip radius source-interface Ethernet0/0` para que los paquetes RADIUS salgan con origen `10.7.2.2`, la IP registrada como cliente en NPS. Se habilitan los atributos de proveedor con `radius-server vsa send authentication` y `accounting`.
-
-![Topología](IMG/proof.png)
 
 ![Topología](IMG/AAA-server.png)
 
