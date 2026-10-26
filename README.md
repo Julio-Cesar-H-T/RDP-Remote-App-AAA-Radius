@@ -40,7 +40,6 @@ El direccionamiento deriva de la matrícula **2025-0702** (ambos segmentos usan 
 ## Baseline (preexistente)
 
 Active Directory (dominio `SEGREDES.local`), DNS y DHCP ya estaban configurados antes de esta práctica. Lo relevante para RADIUS son los dos grupos de TI: **NET-ADMINS** (privilegio 15) y **NET-SUPPORT** (privilegio 1), 
-![Topología](IMG/usuarios.png)
 
 | Usuario     | Login | OU  | Grupo      | Acceso al router            |
 | :---------- | :---- | :-- | :--------- | :-------------------------- |
