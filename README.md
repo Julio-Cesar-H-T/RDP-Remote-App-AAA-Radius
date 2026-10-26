@@ -31,7 +31,7 @@ El direccionamiento deriva de la matrícula **2025-0702** (ambos segmentos usan 
 | :---------- | :------- | :----------------- | :----------------------------------- |
 | R-CORE      | gig0/1   | 10.7.2.1/24        | Gateway de servidores, origen RADIUS |
 | R-CORE      | gig0/0   | 10.7.1.1/24        | Gateway de clientes, relay DHCP      |
-| DC-RANDYNIN | Ethernet | 10.7.2.2/24        | AD DS, DNS, DHCP, NPS, RDS, IIS      |
+| DC          | Ethernet | 10.7.2.2/24        | AD DS, DNS, DHCP, NPS, RDS, IIS      |
 | Windows 11  | Ethernet | 10.7.2.2/24 (DHCP) | Cliente de pruebas                   |
 
 
@@ -182,10 +182,10 @@ interface GigabitEthernet0/5
 **Usuario local, enable secret y SSH:**
 
 ```
-username randy privilege 15 secret <PASSWORD>
+username Julio privilege 15 secret <PASSWORD>
 enable secret <ENABLE_SECRET>
 
-ip domain name randy.nin
+ip domain name Julio.local
 crypto key generate rsa modulus 2048
 ip ssh version 2
 ip ssh time-out 60
