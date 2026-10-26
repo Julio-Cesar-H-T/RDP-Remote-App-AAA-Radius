@@ -25,7 +25,7 @@ Un router central (R-3) conecta tres dominios de red: internet a través del ISP
 
 ![Topología](IMG/Topologia.png)
 
-El direccionamiento deriva de la matrícula **2025-0660** (ambos segmentos usan el patrón `.6.60`, clave RADIUS `Radius0660`).
+El direccionamiento deriva de la matrícula **2025-0702** (ambos segmentos usan el patrón `.7.2`, clave RADIUS `Radius0702`).
 
 | Dispositivo | Interfaz | IP / Máscara       | Función                              |
 | :---------- | :------- | :----------------- | :----------------------------------- |
